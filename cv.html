@@ -4,27 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO: Meta description -->
     <meta name="description" content="Curriculum Vitae Rafael Nobel Hutapea. Informatics Undergraduate & Backend Developer dengan keahlian Java, Spring Boot, Database Architecture, dan AI." />
     
     <title>Curriculum Vitae - Rafael Nobel Hutapea</title>
 
     <link rel="icon" href="assets/img/logo.png" type="image/png" />
 
-    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- TAILWIND CSS v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- TABLER ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 
     <style type="text/tailwindcss">
         @theme {
-            /* Palette Aero AI Theme */
             --color-brand: #141A45;
             --color-brand-dark: #7C10D0;
             --color-brand-soft: #ECE1D5;
@@ -40,7 +34,6 @@
 </head>
 <body class="text-slate-800 antialiased flex flex-col min-h-screen">
 
-    <!-- NAVBAR -->
     <nav class="bg-brand sticky top-0 z-50 shadow-md">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
             <a href="index.html" class="logo flex items-center gap-2 text-lg font-bold text-white">
@@ -60,7 +53,6 @@
         </div>
     </nav>
 
-    <!-- Mobile menu -->
     <div id="mobileMenu" class="hidden bg-brand border-t border-white/10 md:hidden">
         <ul class="flex flex-col px-4 py-3 text-white font-medium space-y-2">
             <li><a href="index.html" class="block py-2">Beranda</a></li>
@@ -71,7 +63,6 @@
 
     <main class="mx-auto max-w-7xl px-4 py-10 w-full flex-grow">
         
-        <!-- HEADER PROFIL -->
         <section class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left mb-8">
             <img src="assets/img/profil.png" alt="Foto Profil Rafael Nobel Hutapea" width="160" height="160" class="size-32 md:size-40 rounded-full object-cover border-4 border-brand shadow-sm shrink-0">
             
@@ -90,13 +81,10 @@
             </div>
         </section>
 
-        <!-- LAYOUT GRID -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
-            <!-- KOLOM KIRI -->
             <div class="lg:col-span-1 space-y-8">
                 
-                <!-- SUMMARY -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
                         <i class="ti ti-user-scan text-brand" aria-hidden="true"></i> Summary
@@ -106,7 +94,6 @@
                     </p>
                 </section>
 
-                <!-- EDUCATION -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
                         <i class="ti ti-school text-brand" aria-hidden="true"></i> Education
@@ -125,7 +112,6 @@
                     </div>
                 </section>
 
-                <!-- SKILLS -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
                         <i class="ti ti-code text-brand" aria-hidden="true"></i> Skills
@@ -143,8 +129,8 @@
                             <span class="px-2.5 py-1 bg-brand-soft text-slate-900 text-[11px] font-bold rounded-md">ERD/EER</span>
                             <span class="px-2.5 py-1 bg-brand-soft text-slate-900 text-[11px] font-bold rounded-md">Data Normalization</span>
                             <span class="px-2.5 py-1 bg-brand-soft text-slate-900 text-[11px] font-bold rounded-md">Figma & Web Design</span>
-                            <span class="px-2.5 py-1 bg-brand-soft text-slate-900 text-[11px] font-bold rounded-md">Git/Github Actions (CI/CD)</span>
-                            <span class="px-2.5 py-1 bg-brand-soft text-slate-900 text-[11px] font-bold rounded-md">Statistical Data Analysis</span>
+                            <span class="px-2.5 py-1 bg-brand-soft text-slate-900 text-[11px] font-bold rounded-md">Git/Github Actions</span>
+                            <span class="px-2.5 py-1 bg-brand-soft text-slate-900 text-[11px] font-bold rounded-md">Data Analysis</span>
                             <span class="px-2.5 py-1 bg-brand-soft text-slate-900 text-[11px] font-bold rounded-md">Appsheet</span>
                         </div>
                     </div>
@@ -159,36 +145,33 @@
                     </div>
                 </section>
 
-                <!-- BOOTCAMPS & CERTIFICATIONS -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
                         <i class="ti ti-certificate text-brand" aria-hidden="true"></i> Bootcamps & Certifications
                     </h2>
                     <ul class="space-y-4">
+                        <!-- PERBAIKAN KONTRAS: text-slate-400 diubah menjadi text-slate-600 agar lebih terbaca -->
                         <li class="text-xs">
                             <h3 class="font-bold text-slate-900">Introduction to LLM</h3>
-                            <p class="text-slate-600 mt-1">IBM SkillsBuild x Hacktiv8 <span class="text-slate-400 block sm:inline">(May 2026 – Jun 2026)</span></p>
+                            <p class="text-slate-700 mt-1">IBM SkillsBuild x Hacktiv8 <span class="text-slate-600 block sm:inline font-medium">(May 2026 – Jun 2026)</span></p>
                         </li>
                         <li class="text-xs">
                             <h3 class="font-bold text-slate-900">Intelligent by Design: Build an AI Agent</h3>
-                            <p class="text-slate-600 mt-1">IBM SkillsBuild x Hacktiv8 <span class="text-slate-400 block sm:inline">(May 2026 – Jun 2026)</span></p>
+                            <p class="text-slate-700 mt-1">IBM SkillsBuild x Hacktiv8 <span class="text-slate-600 block sm:inline font-medium">(May 2026 – Jun 2026)</span></p>
                         </li>
                         <li class="text-xs">
                             <h3 class="font-bold text-slate-900">Introduction to IT</h3>
-                            <p class="text-slate-600 mt-1">IBM SkillsBuild x Codecademy <span class="text-slate-400 block sm:inline">(May 2026 – Jun 2026)</span></p>
+                            <p class="text-slate-700 mt-1">IBM SkillsBuild x Codecademy <span class="text-slate-600 block sm:inline font-medium">(May 2026 – Jun 2026)</span></p>
                         </li>
                         <li class="text-xs">
                             <h3 class="font-bold text-slate-900">Introduction to Cloud Computing</h3>
-                            <p class="text-slate-600 mt-1">IBM SkillsBuild <span class="text-slate-400 block sm:inline">(Jun 2026)</span></p>
+                            <p class="text-slate-700 mt-1">IBM SkillsBuild <span class="text-slate-600 block sm:inline font-medium">(Jun 2026)</span></p>
                         </li>
                     </ul>
                 </section>
             </div>
 
-            <!-- KOLOM KANAN -->
             <div class="lg:col-span-2 space-y-8">
-                
-                <!-- PROJECT & EXPERIENCES -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-6">
                         <i class="ti ti-rocket text-brand" aria-hidden="true"></i> Project & Experiences
@@ -222,7 +205,7 @@
                         <div class="relative pl-6 border-l-2 border-slate-300">
                             <span class="absolute -left-1.5 top-1.5 size-3 bg-brand rounded-full ring-4 ring-white"></span>
                             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
-                                <h3 class="font-bold text-slate-900">End to End Web & Backend System - OOP Project (Research Management System)</h3>
+                                <h3 class="font-bold text-slate-900">End to End Web & Backend System - OOP Project</h3>
                                 <span class="text-[11px] font-semibold text-brand bg-brand-soft px-2 py-1 rounded border border-slate-200 whitespace-nowrap">Oct 2025 – Dec 2025</span>
                             </div>
                             <p class="text-xs font-semibold text-slate-500 mt-1">Sitoluama, Indonesia</p>
@@ -270,7 +253,6 @@
                     </div>
                 </section>
 
-                <!-- ORGANIZATIONAL EXPERIENCES -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-6">
                         <i class="ti ti-users text-brand" aria-hidden="true"></i> Organizational Experiences
@@ -318,7 +300,6 @@
                     </div>
                 </section>
 
-                <!-- PORTFOLIO PABWE (Wajib untuk Navigasi Modul) -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-5">
                         <i class="ti ti-device-laptop text-brand" aria-hidden="true"></i> Web Development Portfolio (PABWE)
@@ -327,14 +308,14 @@
                         <div class="border border-slate-300 p-4 rounded-xl bg-slate-50 transition hover:border-brand">
                             <h3 class="font-bold text-slate-900 text-sm">Aero AI Landing Page</h3>
                             <p class="text-xs text-slate-700 mt-1 mb-3">Company profile statis dibangun menggunakan CSS Murni.</p>
-                            <a href="index.html" class="inline-flex items-center gap-1 text-xs font-bold text-brand-dark hover:underline">
+                            <a href="index.html" class="inline-flex items-center gap-1 text-xs font-bold text-brand hover:text-brand-dark underline">
                                 Buka Halaman <i class="ti ti-arrow-right" aria-hidden="true"></i>
                             </a>
                         </div>
                         <div class="border border-slate-300 p-4 rounded-xl bg-slate-50 transition hover:border-brand">
                             <h3 class="font-bold text-slate-900 text-sm">Portal Blog AI</h3>
                             <p class="text-xs text-slate-700 mt-1 mb-3">Daftar artikel blog responsif dengan Bootstrap 5.</p>
-                            <a href="blog.html" class="inline-flex items-center gap-1 text-xs font-bold text-brand-dark hover:underline">
+                            <a href="blog.html" class="inline-flex items-center gap-1 text-xs font-bold text-brand hover:text-brand-dark underline">
                                 Buka Halaman <i class="ti ti-arrow-right" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -344,7 +325,6 @@
         </div>
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-[#0b102e] text-slate-300 py-6 text-center text-sm mt-auto border-t border-[#1a235c]">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <p>&copy; 2026 Rafael Nobel Hutapea - PABWE Praktikum 2.</p>
