@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Aero AI</title>
+    
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        .card-blog {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-blog:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+        .cover-img {
+            height: 200px;
+            object-fit: cover;
+            background-color: #ECE1D5;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Menerapkan font ke Bootstrap */
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Poppins', sans-serif; }
+        
+        .card-blog {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-blog:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+        .cover-img {
+            height: 200px;
+            object-fit: cover;
+            background-color: #ECE1D5;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #141A45;">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" height="30">
+                Aero AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-semibold" href="blog.html">Blog AI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Profil Tim (CV)</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER BLOG -->
+    <header class="bg-white border-bottom py-5 mb-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Jelajahi Dunia <span style="color: #141A45;">Kecerdasan Buatan</span></h1>
+            <p class="lead text-secondary max-w-75 mx-auto">
+                Artikel, wawasan, dan tren terbaru seputar Generative AI, Machine Learning, dan Otomasi Industri.
+            </p>
+            
+            <div class="d-flex justify-content-center gap-2 flex-wrap mt-4">
+                <span class="badge rounded-pill px-3 py-2 fs-6 cursor-pointer" style="background-color: #141A45;">Semua</span>
+                <span class="badge rounded-pill text-bg-light border px-3 py-2 fs-6 text-secondary">Generative AI</span>
+                <span class="badge rounded-pill text-bg-light border px-3 py-2 fs-6 text-secondary">Computer Vision</span>
+                <span class="badge rounded-pill text-bg-light border px-3 py-2 fs-6 text-secondary">Etika AI</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- KONTEN DAFTAR BLOG -->
+    <main class="container mb-5">
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 card-blog">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop" class="card-img-top cover-img" alt="Generative AI">
+                    <div class="card-body">
+                        <span class="badge mb-2" style="background-color: #7C10D0; color: white;"><i class="bi bi-cpu me-1"></i> Generative AI</span>
+                        <h5 class="card-title fw-bold">
+                            <a href="blog-detail.html" class="text-dark text-decoration-none stretched-link">
+                                Mengenal RAG (Retrieval-Augmented Generation) untuk Chatbot
+                            </a>
+                        </h5>
+                        <p class="card-text text-secondary">Pelajari bagaimana RAG dapat mengurangi halusinasi pada model bahasa (LLM) dengan mengakses data bisnis real-time.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center text-muted small pb-3">
+                        <span><i class="bi bi-person-circle me-1"></i> Budi Santoso</span>
+                        <span><i class="bi bi-calendar3 me-1"></i> 15 Sep 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 card-blog">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop" class="card-img-top cover-img" alt="Computer Vision">
+                    <div class="card-body">
+                        <span class="badge text-bg-info text-white mb-2"><i class="bi bi-eye me-1"></i> Computer Vision</span>
+                        <h5 class="card-title fw-bold">
+                            <a href="blog-detail.html" class="text-dark text-decoration-none stretched-link">
+                                Penerapan Computer Vision di Industri Manufaktur
+                            </a>
+                        </h5>
+                        <p class="card-text text-secondary">Bagaimana kamera cerdas membantu mengotomatisasi inspeksi kualitas barang di pabrik secara real-time dan akurat.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center text-muted small pb-3">
+                        <span><i class="bi bi-person-circle me-1"></i> Andi Pratama</span>
+                        <span><i class="bi bi-calendar3 me-1"></i> 12 Sep 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 card-blog">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop" class="card-img-top cover-img" alt="Etika AI">
+                    <div class="card-body">
+                        <span class="badge text-bg-warning text-white mb-2"><i class="bi bi-shield-check me-1"></i> Etika AI</span>
+                        <h5 class="card-title fw-bold">
+                            <a href="blog-detail.html" class="text-dark text-decoration-none stretched-link">
+                                Pentingnya Etika AI dalam Otomasi Proses Bisnis
+                            </a>
+                        </h5>
+                        <p class="card-text text-secondary">AI dapat mengambil keputusan penting. Oleh karena itu, membangun AI yang adil, transparan, dan tidak bias adalah sebuah keharusan.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center text-muted small pb-3">
+                        <span><i class="bi bi-person-circle me-1"></i> Citra Kirana</span>
+                        <span><i class="bi bi-calendar3 me-1"></i> 10 Sep 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 card-blog">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=600&auto=format&fit=crop" class="card-img-top cover-img" alt="Machine Learning">
+                    <div class="card-body">
+                        <span class="badge text-bg-danger mb-2"><i class="bi bi-graph-up-arrow me-1"></i> MLOps</span>
+                        <h5 class="card-title fw-bold">
+                            <a href="blog-detail.html" class="text-dark text-decoration-none stretched-link">
+                                Membangun Infrastruktur MLOps yang Skalabel
+                            </a>
+                        </h5>
+                        <p class="card-text text-secondary">Membuat model AI itu mudah, tetapi menjalankannya di server produksi (Production) butuh infrastruktur MLOps yang matang.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center text-muted small pb-3">
+                        <span><i class="bi bi-person-circle me-1"></i> Reza Pahlevi</span>
+                        <span><i class="bi bi-calendar3 me-1"></i> 05 Sep 2026</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <h5 class="fw-bold"><i class="bi bi-robot" style="color: #141A45;"></i> Aero AI</h5>
+            <p class="text-secondary small mb-0">© 2026 Hak Cipta Dilindungi. PABWE Praktikum 2.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

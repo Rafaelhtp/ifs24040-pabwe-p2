@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae - Rafael Nobel Hutapea</title>
+
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @theme {
+            /* Palette Navy, Purple, & Cream */
+            --color-brand: #141A45;
+            --color-brand-dark: #7C10D0;
+            --color-brand-soft: #ECE1D5;
+            
+            /* Menjadikan Inter sebagai font bawaan Tailwind */
+            --font-sans: 'Inter', sans-serif;
+        }
+        body {
+            background-color: #f8fafc;
+        }
+        /* Memaksa semua heading menggunakan Poppins */
+        h1, h2, h3, h4, h5, h6, .logo {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- NAVBAR -->
+    <nav class="bg-brand sticky top-0 z-50 shadow-md">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+            <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-white">
+                <img src="assets/img/logo.png" alt="Logo" class="h-7 bg-white rounded p-0.5">
+                Aero AI
+            </a>
+            <ul class="flex items-center gap-4 md:gap-6 text-sm md:text-base text-white/90 font-medium">
+                <li><a href="index.html" class="hover:text-brand-soft transition">Beranda</a></li>
+                <li><a href="blog.html" class="hover:text-brand-soft transition">Blog AI</a></li>
+                <li><a href="cv.html" class="text-white font-bold border-b-2 border-white pb-1">Profil Tim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="mx-auto max-w-6xl px-4 py-10 w-full flex-grow">
+        
+        <!-- HEADER PROFIL -->
+        <section class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left mb-8 transition hover:shadow-md">
+            <!-- Foto Avatar Asli -->
+        <img src="assets/img/profil.png" alt="Foto Profil Rafael" class="size-32 md:size-40 rounded-full object-cover border-4 border-brand shadow-sm shrink-0"></div>
+            <div class="flex-1 mt-2 md:mt-4">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">Rafael Nobel Hutapea</h1>
+                <h2 class="text-lg md:text-xl font-semibold text-brand mt-1">Informatics Undergraduate & Backend Developer</h2>
+                
+                <div class="mt-4 flex flex-wrap justify-center md:justify-start gap-x-5 gap-y-2 text-sm text-slate-600">
+                    <span class="flex items-center gap-1"><i class="ti ti-mail text-brand"></i> rafaelhutapea06@gmail.com</span>
+                    <span class="flex items-center gap-1"><i class="ti ti-phone text-brand"></i> +62 852 1734 0743</span>
+                    <span class="flex items-center gap-1"><i class="ti ti-map-pin text-brand"></i> Tarutung, Sumatera Utara</span>
+                    <a href="https://linkedin.com/in/rafael-nobelhutapea" target="_blank" class="flex items-center gap-1 hover:text-brand transition font-medium"><i class="ti ti-brand-linkedin text-brand"></i> LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYOUT GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="md:col-span-1 space-y-8">
+                <!-- RINGKASAN -->
+                <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
+                        <i class="ti ti-user-scan text-brand"></i> Summary
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed text-justify">
+                        Informatics undergraduate at Institut Teknologi Del with a 3.45 GPA, specializing in backend development, database architecture, and UI/UX design. Demonstrated technical expertise in Java, Spring Boot, SQL, and CI/CD pipelines through end-to-end academic projects and national tech competitions like Gemastik XVIII and PKM 2026. Combines a strong foundation in software engineering with leadership experience.
+                    </p>
+                </section>
+
+                <!-- PENDIDIKAN -->
+                <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
+                        <i class="ti ti-school text-brand"></i> Education
+                    </h3>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-800">Institut Teknologi Del</h4>
+                        <p class="text-xs text-brand font-bold mt-1">Bachelor Degree of Informatics</p>
+                        <p class="text-xs text-slate-500 mt-1 flex justify-between">
+                            <span>Sitoluama, Indonesia</span>
+                            <span>Aug 2024 - Sep 2028</span>
+                        </p>
+                        <p class="text-xs font-semibold text-slate-700 mt-2">GPA: 3.45 / 4.00</p>
+                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                            <span class="font-semibold text-slate-700">Coursework:</span> OOP & Software Engineering, Functional & Procedural Programming, Database Design, UI/UX Design, Algorithm and Data Structures.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- KEAHLIAN -->
+                <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
+                        <i class="ti ti-code text-brand"></i> Skills
+                    </h3>
+                    <div class="mb-4">
+                        <p class="text-xs font-bold text-slate-700 mb-2">Hard Skills</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-brand-soft text-brand text-[11px] font-bold rounded-md border border-slate-200">Java & Spring Boot</span>
+                            <span class="px-2.5 py-1 bg-brand-soft text-brand text-[11px] font-bold rounded-md border border-slate-200">OOP & JPA</span>
+                            <span class="px-2.5 py-1 bg-brand-soft text-brand text-[11px] font-bold rounded-md border border-slate-200">SQL & Database</span>
+                            <span class="px-2.5 py-1 bg-brand-soft text-brand text-[11px] font-bold rounded-md border border-slate-200">Data Structures</span>
+                            <span class="px-2.5 py-1 bg-brand-soft text-brand text-[11px] font-bold rounded-md border border-slate-200">Git / CI/CD</span>
+                            <span class="px-2.5 py-1 bg-brand-soft text-brand text-[11px] font-bold rounded-md border border-slate-200">Figma</span>
+                            <span class="px-2.5 py-1 bg-brand-soft text-brand text-[11px] font-bold rounded-md border border-slate-200">MIPS Assembly</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-700 mb-2">Soft Skills</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-[11px] font-semibold rounded-md border border-slate-200">Team Leadership</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-[11px] font-semibold rounded-md border border-slate-200">Critical Thinking</span>
+                            <span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-[11px] font-semibold rounded-md border border-slate-200">Project Management</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BOOTCAMPS & CERTIFICATIONS -->
+                <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
+                        <i class="ti ti-certificate text-brand"></i> Certifications
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="text-xs">
+                            <span class="font-bold text-slate-800 block">Introduction to LLM</span>
+                            <span class="text-slate-500">IBM SkillsBuild x Hacktiv8 (2026)</span>
+                        </li>
+                        <li class="text-xs">
+                            <span class="font-bold text-slate-800 block">Intelligent by Design: AI Agent</span>
+                            <span class="text-slate-500">IBM SkillsBuild x Hacktiv8 (2026)</span>
+                        </li>
+                        <li class="text-xs">
+                            <span class="font-bold text-slate-800 block">Introduction to IT & Cloud</span>
+                            <span class="text-slate-500">IBM SkillsBuild (2026)</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- KOLOM KANAN -->
+            <div class="md:col-span-2 space-y-8">
+
+                <!-- PROJECTS & EXPERIENCES -->
+                <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-6">
+                        <i class="ti ti-rocket text-brand"></i> Project & Experiences
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <span class="absolute -left-1.5 top-1.5 size-3 bg-brand rounded-full ring-4 ring-white"></span>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <h4 class="font-bold text-slate-800">Battle Code - Algorithms and Data Structures</h4>
+                                <span class="text-xs font-semibold text-brand bg-brand-soft px-2 py-1 rounded border border-slate-200">Apr 2026 - May 2026</span>
+                            </div>
+                            <p class="mt-2 text-sm text-slate-600 text-justify">
+                                Designed and developed a Dynamic Programming problem titled 'Ways to Climb' for the Circle Battle project, including 10 tiered test cases, Java code templates, comprehensive README documentation, and GitHub Actions workflow for automated testing and scoring.
+                            </p>
+                        </div>
+
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <span class="absolute -left-1.5 top-1.5 size-3 bg-brand rounded-full ring-4 ring-white"></span>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <h4 class="font-bold text-slate-800">Team Leader - PKM-PM Proposal (HEMOSMART)</h4>
+                                <span class="text-xs font-semibold text-brand bg-brand-soft px-2 py-1 rounded border border-slate-200">Mar 2026 - May 2026</span>
+                            </div>
+                            <p class="mt-2 text-sm text-slate-600 text-justify">
+                                Led the end-to-end development of "HEMOSMART", an Android-based expert system proposal for early anemia detection to prevent stunting, including establishing strategic regional health partnerships.
+                            </p>
+                        </div>
+
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <span class="absolute -left-1.5 top-1.5 size-3 bg-brand rounded-full ring-4 ring-white"></span>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <h4 class="font-bold text-slate-800">End to End Web & Backend System (OOP Project)</h4>
+                                <span class="text-xs font-semibold text-brand bg-brand-soft px-2 py-1 rounded border border-slate-200">Oct 2025 - Dec 2025</span>
+                            </div>
+                            <p class="mt-2 text-sm text-slate-600 text-justify">
+                                Designed the User Interface (UI) and developed an end-to-end backend system utilizing Java, Spring Boot, and JPA, while managing the CI/CD pipeline via GitHub.
+                            </p>
+                        </div>
+
+                        <div class="relative pl-6 border-l-2 border-slate-200">
+                            <span class="absolute -left-1.5 top-1.5 size-3 bg-brand rounded-full ring-4 ring-white"></span>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <h4 class="font-bold text-slate-800">Team Leader - Gemastik XVIII (AquaGuard Smart City)</h4>
+                                <span class="text-xs font-semibold text-brand bg-brand-soft px-2 py-1 rounded border border-slate-200">Jun 2025 - Oct 2025</span>
+                            </div>
+                            <p class="mt-2 text-sm text-slate-600 text-justify">
+                                Qualified as the university delegate for the Smart City category by developing "AquaGuard Smart City," an integrated flood risk management solution featuring early warning systems and monitoring dashboards.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ORGANIZATIONAL EXPERIENCES -->
+                <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-6">
+                        <i class="ti ti-users text-brand"></i> Organizational Experiences
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-start">
+                                <h4 class="font-bold text-slate-800 text-sm">Majelis Permusyawaratan Mahasiswa (MPM) IT DEL</h4>
+                                <span class="text-xs text-slate-500 whitespace-nowrap">Mar 2026 - Present</span>
+                            </div>
+                            <p class="text-xs font-semibold text-brand mb-2">Commission B – Finance and Logistic</p>
+                            <ul class="list-disc list-inside text-sm text-slate-600 space-y-1 text-justify">
+                                <li>Actively engaged in the university's student legislative body to advocate for student aspirations and formulate campus-level policies.</li>
+                                <li>Developed and proposed strategic work program ideas and their implementation plans.</li>
+                                <li>Drafted organizational commitment statements ensuring transparency.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-start">
+                                <h4 class="font-bold text-slate-800 text-sm">Paduan Suara Mahasiswa – Mateo Choir</h4>
+                                <span class="text-xs text-slate-500 whitespace-nowrap">Nov 2024 - Present</span>
+                            </div>
+                            <p class="text-xs font-semibold text-brand mb-2">Tenor</p>
+                            <ul class="list-disc list-inside text-sm text-slate-600 space-y-1 text-justify">
+                                <li>Actively participated in regular rehearsals and musical development sessions.</li>
+                                <li>Collaborated effectively within a vocal ensemble to achieve precise harmonization.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PROYEK PABWE (Wajib untuk Navigasi Antar Halaman) -->
+                <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-5">
+                        <i class="ti ti-device-laptop text-brand"></i> Web Development Portfolio (PABWE)
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="border border-slate-200 p-4 rounded-xl hover:border-brand transition group bg-slate-50">
+                            <i class="ti ti-layout-grid text-3xl text-brand transition mb-2"></i>
+                            <h4 class="font-bold text-slate-800 text-sm">Aero AI Landing Page</h4>
+                            <p class="text-xs text-slate-500 mt-1 mb-3">Company profile statis dibangun menggunakan CSS Murni (Pure CSS) dan Flexbox.</p>
+                            <a href="index.html" class="inline-flex items-center gap-1 text-xs font-bold text-brand hover:text-brand-dark underline">
+                                Buka Halaman Utama <i class="ti ti-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="border border-slate-200 p-4 rounded-xl hover:border-brand transition group bg-slate-50">
+                            <i class="ti ti-article text-3xl text-brand transition mb-2"></i>
+                            <h4 class="font-bold text-slate-800 text-sm">Portal Blog AI</h4>
+                            <p class="text-xs text-slate-500 mt-1 mb-3">Daftar & Detail artikel blog yang dikembangkan responsif dengan Bootstrap 5.</p>
+                            <a href="blog.html" class="inline-flex items-center gap-1 text-xs font-bold text-brand hover:text-brand-dark underline">
+                                Buka Halaman Blog <i class="ti ti-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-primary text-slate-400 py-6 text-center text-sm mt-auto" style="background-color: #141A45;">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-white">
+            <p>&copy; 2026 Rafael Nobel Hutapea - PABWE Praktikum 2.</p>
+            <div class="flex gap-4">
+                <a href="index.html" class="hover:text-brand-soft transition">Beranda</a>
+                <a href="blog.html" class="hover:text-brand-soft transition">Blog</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
