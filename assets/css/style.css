@@ -30,12 +30,7 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  color: var(--text-main);
-}
-
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; color: var(--text-main); }
 a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
 
 .container { width: 90%; max-width: 1100px; margin: 0 auto; }
@@ -51,13 +46,24 @@ a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
   backdrop-filter: blur(8px); border-bottom: 1px solid var(--border-color);
   padding: 15px 0;
 }
-.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; position: relative; }
 .logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; }
 .logo img { height: 30px; }
 .logo span { color: var(--brand-primary); }
+
 .nav-menu { display: flex; gap: 24px; align-items: center; font-weight: 600; }
 .nav-menu a:hover { color: var(--brand-primary); }
 .link-highlight { color: var(--brand-primary); }
+
+/* PERBAIKAN: Tombol Hamburger untuk Mobile Menu */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--brand-primary);
+  cursor: pointer;
+}
 
 .btn {
   display: inline-block; padding: 12px 24px; border-radius: 99px;
@@ -65,35 +71,23 @@ a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
   text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 .btn:hover { transform: translateY(-3px); }
-.btn-primary {
-  background-color: var(--brand-primary); color: var(--bg-white);
-  border: 2px solid var(--brand-primary); box-shadow: 0 4px 15px rgba(20, 26, 69, 0.3);
-}
+.btn-primary { background-color: var(--brand-primary); color: var(--bg-white); border: 2px solid var(--brand-primary); box-shadow: 0 4px 15px rgba(20, 26, 69, 0.3); }
 .btn-primary:hover { background-color: var(--brand-dark); border-color: var(--brand-dark); color: var(--bg-white); }
 .btn-outline { background-color: transparent; color: var(--brand-primary); border: 2px solid var(--brand-primary); }
 .btn-outline:hover { background-color: var(--brand-soft); }
 .btn-block { display: block; width: 100%; }
 
-.hero {
-  background: linear-gradient(135deg, var(--brand-soft) 0%, var(--bg-white) 100%);
-  padding: 100px 0; text-align: center;
-}
+.hero { background: linear-gradient(135deg, var(--brand-soft) 0%, var(--bg-white) 100%); padding: 100px 0; text-align: center; }
 .hero-container { display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .hero-text { max-width: 800px; }
-.badge {
-  display: inline-block; background-color: var(--brand-soft); color: var(--brand-primary);
-  padding: 6px 16px; border-radius: 99px; font-size: 0.85rem; font-weight: 700; margin-bottom: 20px;
-}
+.badge { display: inline-block; background-color: var(--brand-soft); color: var(--brand-primary); padding: 6px 16px; border-radius: 99px; font-size: 0.85rem; font-weight: 700; margin-bottom: 20px; }
 .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 20px; }
 .hero h1 span { color: var(--brand-primary); }
 .hero .description { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px; }
 .hero-buttons { display: flex; gap: 15px; justify-content: center; }
 
 .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-.card {
-  background-color: var(--bg-white); padding: 40px 30px; border-radius: var(--radius);
-  border: 1px solid var(--border-color); box-shadow: var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+.card { background-color: var(--bg-white); padding: 40px 30px; border-radius: var(--radius); border: 1px solid var(--border-color); box-shadow: var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(20, 26, 69, 0.15); border-color: var(--brand-primary); }
 .card-icon { font-size: 3rem; margin-bottom: 20px; }
 .card h3 { margin-bottom: 15px; font-size: 1.3rem; }
@@ -105,38 +99,39 @@ a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
 .feature-list { list-style: none; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
 .feature-list li { background-color: rgba(255, 255, 255, 0.1); padding: 10px 20px; border-radius: 8px; font-weight: 600; }
 
-.form-wrapper {
-  max-width: 600px; margin: 0 auto; background-color: var(--bg-white); padding: 40px;
-  border-radius: var(--radius); border: 1px solid var(--border-color); box-shadow: var(--shadow);
-}
+.form-wrapper { max-width: 600px; margin: 0 auto; background-color: var(--bg-white); padding: 40px; border-radius: var(--radius); border: 1px solid var(--border-color); box-shadow: var(--shadow); }
 .input-group { margin-bottom: 20px; }
 .input-group label { display: block; font-weight: 600; margin-bottom: 8px; }
-.input-group input, .input-group textarea {
-  width: 100%; padding: 12px 15px; border: 1px solid var(--border-color); border-radius: 8px;
-  font-family: inherit; font-size: 1rem; transition: border-color 0.3s ease;
-}
+.input-group input, .input-group textarea { width: 100%; padding: 12px 15px; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 1rem; transition: border-color 0.3s ease; }
 .input-group input:focus, .input-group textarea:focus { outline: none; border-color: var(--brand-primary); }
 
 .site-footer { background-color: var(--text-main); color: var(--bg-white); padding: 60px 0 20px; }
 .footer-container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; margin-bottom: 40px; }
 .footer-brand h3 { color: var(--bg-white); font-size: 1.8rem; margin-bottom: 10px; }
-
-/* PERBAIKAN KONTRAS: Warna teks span diubah menjadi brand-soft (Cream) agar kontras rasio > 4.5:1 */
 .footer-brand span { color: var(--brand-soft); }
-
 .footer-brand p { color: #94a3b8; max-width: 400px; }
 .footer-links h4 { color: var(--bg-white); margin-bottom: 15px; }
 .footer-links a { display: block; color: #94a3b8; margin-bottom: 10px; }
 .footer-links a:hover { color: var(--brand-primary); }
-
-/* PERBAIKAN KONTRAS: Warna copyright dibuat lebih cerah (#cbd5e1) */
-.footer-bottom {
-  text-align: center; color: #cbd5e1; border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 20px; font-size: 0.9rem;
-}
+.footer-bottom { text-align: center; color: #cbd5e1; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px; font-size: 0.9rem; }
 
 @media (max-width: 768px) {
-  .nav-menu { display: none; }
+  /* PERBAIKAN: Menampilkan tombol hamburger & mengatur menu dropdown */
+  .hamburger { display: block; }
+  .nav-menu { 
+    display: none; 
+    flex-direction: column; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background-color: var(--bg-white); 
+    padding: 20px; 
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05); 
+    border-top: 1px solid var(--border-color); 
+  }
+  .nav-menu.active { display: flex; }
+  
   .hero-buttons { flex-direction: column; }
   .feature-list { flex-direction: column; gap: 15px; }
   .about-container { padding: 40px 20px; }

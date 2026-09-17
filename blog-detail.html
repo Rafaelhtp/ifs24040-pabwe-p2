@@ -7,7 +7,6 @@
     
     <link rel="icon" href="assets/img/logo.png" type="image/png" />
 
-    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -42,14 +41,12 @@
 </head>
 <body class="bg-light">
 
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-brand shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
-                <img src="assets/img/logo.png" alt="Logo" height="30">
+                <img src="assets/img/logo.png" alt="Logo" width="30" height="30">
                 Aero AI
             </a>
-            <!-- PERBAIKAN: Penambahan aria-label pada tombol toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Buka navigasi menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,10 +60,10 @@
         </div>
     </nav>
 
-    <!-- KONTEN ARTIKEL -->
     <main class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-lg-8 bg-white p-4 p-md-5 rounded shadow-sm">
+            <!-- PERBAIKAN: Konten utama dibungkus tag semantik <article> -->
+            <article class="col-lg-8 bg-white p-4 p-md-5 rounded shadow-sm">
                 
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-3">
@@ -87,24 +84,22 @@
                 <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop" alt="Cover RAG AI" class="article-cover mb-4">
 
                 <p class="fs-5">
-                    Model Bahasa Besar (Large Language Models / LLM) seperti ChatGPT telah merevolusi cara kita berinteraksi dengan teknologi. Namun, saat diterapkan dalam skala perusahaan / *enterprise*, LLM menghadapi satu masalah utama: <strong>Halusinasi</strong>. Mereka terkadang mengarang jawaban dengan percaya diri jika tidak memiliki informasi spesifik tentang data internal perusahaan Anda. Di sinilah arsitektur <em>Retrieval-Augmented Generation</em> (RAG) hadir sebagai solusi penyelamat.
+                    Model Bahasa Besar (Large Language Models / LLM) seperti ChatGPT telah merevolusi cara kita berinteraksi dengan teknologi. Namun, saat diterapkan dalam skala perusahaan, LLM menghadapi satu masalah utama: <strong>Halusinasi</strong>. Mereka terkadang mengarang jawaban dengan percaya diri jika tidak memiliki informasi spesifik tentang data internal perusahaan Anda. Di sinilah arsitektur <em>Retrieval-Augmented Generation</em> (RAG) hadir sebagai solusi penyelamat.
                 </p>
 
-                <!-- PERBAIKAN: Mengubah warna text-secondary menjadi text-dark agar lulus uji kontras -->
                 <blockquote class="custom-blockquote my-4 text-dark">
                     "RAG mengibaratkan AI sedang menjalani ujian 'Buka Buku' (Open Book Exam). AI tidak lagi harus menghafal seluruh internet, melainkan cukup mencari referensi dari dokumen internal perusahaan Anda sebelum menjawab."
                 </blockquote>
 
-                <!-- PERBAIKAN: Hierarki H3 diubah menjadi H2 karena judul utama adalah H1 -->
                 <h2 class="h3 fw-bold mt-4 mb-3">Bagaimana RAG Bekerja?</h2>
                 <p>
-                    Sederhananya, RAG menggabungkan kemampuan sistem pencarian informasi (retrieval) dengan kemampuan generatif LLM. Ketika pelanggan bertanya pada chatbot AI di website Anda, sistem RAG tidak langsung menyuruh LLM menebak jawaban. Sistem akan lebih dulu <em>mencari (retrieve)</em> potongan teks paling relevan dari *database* internal Anda (seperti PDF panduan produk, FAQ, atau kebijakan retur). 
+                    Sederhananya, RAG menggabungkan kemampuan sistem pencarian informasi (retrieval) dengan kemampuan generatif LLM. Ketika pelanggan bertanya pada chatbot AI di website Anda, sistem RAG tidak langsung menyuruh LLM menebak jawaban. Sistem akan lebih dulu <em>mencari (retrieve)</em> potongan teks paling relevan dari database internal Anda (seperti PDF panduan produk, FAQ, atau kebijakan retur). 
                 </p>
 
                 <p>Implementasi RAG memberikan berbagai keuntungan bagi perusahaan, antara lain:</p>
                 <ul class="mb-4">
                     <li><i class="bi bi-check-circle-fill text-brand me-2"></i> <strong>Akurasi Tinggi:</strong> Jawaban yang dihasilkan 100% didasarkan pada dokumen resmi perusahaan.</li>
-                    <li><i class="bi bi-check-circle-fill text-brand me-2"></i> <strong>Privasi Data:</strong> Data sensitif tidak perlu digunakan untuk men-*training* model AI publik.</li>
+                    <li><i class="bi bi-check-circle-fill text-brand me-2"></i> <strong>Privasi Data:</strong> Data sensitif tidak perlu digunakan untuk men-training model AI publik.</li>
                     <li><i class="bi bi-check-circle-fill text-brand me-2"></i> <strong>Hemat Biaya:</strong> Anda tidak perlu melakukan <em>Fine-Tuning</em> LLM yang memakan biaya komputasi besar.</li>
                 </ul>
 
@@ -116,14 +111,13 @@
                 </div>
 
                 <p>
-                    Kesimpulannya, RAG adalah jembatan yang menghubungkan kecerdasan generatif model AI dengan keakuratan basis pengetahuan milik Anda sendiri. Jika bisnis Anda berencana untuk mendeploy Chatbot Pintar atau Asisten Virtual untuk internal karyawan, arsitektur RAG bukanlah sebuah opsi, melainkan sebuah kebutuhan standar (best-practice) di tahun 2026 ini. Hubungi <strong>Aero AI</strong> untuk konsultasi integrasi RAG ke dalam sistem Anda.
+                    Kesimpulannya, RAG adalah jembatan yang menghubungkan kecerdasan generatif model AI dengan keakuratan basis pengetahuan milik Anda sendiri. Jika bisnis Anda berencana untuk mengimplementasikan Chatbot Pintar atau Asisten Virtual untuk internal karyawan, arsitektur RAG bukanlah sebuah opsi, melainkan sebuah kebutuhan standar (best-practice). Hubungi <strong>Aero AI</strong> untuk konsultasi integrasi RAG ke dalam sistem Anda.
                 </p>
 
                 <hr class="my-5">
 
                 <!-- AREA KOMENTAR -->
                 <section>
-                    <!-- PERBAIKAN: Hierarki H4 diubah menjadi H2 -->
                     <h2 class="h4 fw-bold mb-4"><i class="bi bi-chat-dots me-2 text-brand"></i> Diskusi & Komentar (1)</h2>
                     
                     <div class="card bg-light border-0 mb-4 p-3">
@@ -143,56 +137,50 @@
                     <div class="d-flex align-items-start gap-3 mb-3">
                         <i class="bi bi-person-circle fs-1 text-primary"></i>
                         <div>
-                            <!-- PERBAIKAN: Hierarki H6 diubah menjadi H3 -->
                             <h3 class="h6 fw-bold mb-1">Rina Wijaya <span class="text-muted small fw-normal ms-2">2 jam yang lalu</span></h3>
                             <p class="text-secondary text-sm">Sangat informatif! Kami sedang mencoba implementasi RAG untuk data HR kami, dan sejauh ini hasilnya luar biasa karena bot bisa menjawab SOP perusahaan dengan tepat.</p>
                         </div>
                     </div>
                 </section>
-
-            </div>
+            </article>
         </div>
 
         <!-- ARTIKEL TERKAIT -->
         <div class="row justify-content-center mt-5">
             <div class="col-lg-8">
-                <!-- PERBAIKAN: Hierarki H4 diubah menjadi H2 -->
                 <h2 class="h4 fw-bold mb-4">Baca Juga Artikel Lainnya</h2>
                 <div class="row g-3">
-                    <div class="col-md-6">
+                    <!-- PERBAIKAN: Dibungkus dengan tag semantik <article> -->
+                    <article class="col-md-6">
                         <a href="#" class="text-decoration-none">
                             <div class="card h-100 border-0 shadow-sm flex-row align-items-center p-2">
                                 <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=200&auto=format&fit=crop" class="rounded" alt="CV" width="80" height="80" style="object-fit: cover;">
                                 <div class="ms-3">
-                                    <!-- PERBAIKAN: Hierarki H6 diubah menjadi H3 -->
                                     <h3 class="h6 fw-bold text-dark mb-1">Penerapan Computer Vision di Industri</h3>
                                     <small class="text-muted"><i class="bi bi-calendar3"></i> 12 Sep 2026</small>
                                 </div>
                             </div>
                         </a>
-                    </div>
-                    <div class="col-md-6">
+                    </article>
+                    <article class="col-md-6">
                         <a href="#" class="text-decoration-none">
                             <div class="card h-100 border-0 shadow-sm flex-row align-items-center p-2">
                                 <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=200&auto=format&fit=crop" class="rounded" alt="Etika" width="80" height="80" style="object-fit: cover;">
                                 <div class="ms-3">
-                                    <!-- PERBAIKAN: Hierarki H6 diubah menjadi H3 -->
                                     <h3 class="h6 fw-bold text-dark mb-1">Pentingnya Etika AI dalam Otomasi Bisnis</h3>
                                     <small class="text-muted"><i class="bi bi-calendar3"></i> 10 Sep 2026</small>
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-dark text-white py-4 mt-auto">
         <div class="container text-center">
             <h2 class="h5 fw-bold"><i class="bi bi-robot" style="color: #ECE1D5;"></i> Aero AI</h2>
-            <!-- PERBAIKAN: Kontras text diubah menjadi text-light -->
             <p class="text-light small mb-0">© 2026 Hak Cipta Dilindungi. PABWE Praktikum 2.</p>
         </div>
     </footer>

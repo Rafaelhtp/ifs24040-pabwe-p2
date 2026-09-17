@@ -20,7 +20,13 @@
                 <img src="assets/img/logo.png" alt="Logo Aero" width="30" height="30">
                 Aero <span>AI</span>
             </a>
-            <nav class="nav-menu">
+            
+            <!-- PERBAIKAN: Tombol Hamburger Mobile -->
+            <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
                 <a href="#beranda">Beranda</a>
                 <a href="#layanan">Layanan</a>
                 <a href="#tentang">Tentang</a>
@@ -54,6 +60,7 @@
                     <p>Solusi kecerdasan buatan end-to-end yang disesuaikan dengan kebutuhan industri Anda.</p>
                 </div>
                 <div class="grid-cards">
+                    <!-- PERBAIKAN: Membungkus dengan <article> agar semantik tepat -->
                     <article class="card">
                         <div class="card-icon" aria-hidden="true">🤖</div>
                         <h3>Chatbot & Virtual Assistant</h3>
@@ -120,7 +127,7 @@
     <footer class="site-footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <h3>Aero <span>AI</span></h3>
+                <h3>Aero <span style="color: #ECE1D5;">AI</span></h3>
                 <p>Membawa kecerdasan buatan ke setiap lini bisnis di Indonesia. Cerdas, Etis, dan Inovatif.</p>
             </div>
             <div class="footer-links">
@@ -132,9 +139,28 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Rafael Nobel Hutapea - PABWE Praktikum 2. Hak Cipta Dilindungi.</p>
+            <p style="color: #cbd5e1;">&copy; 2026 Rafael Nobel Hutapea - PABWE Praktikum 2. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 
+    <!-- PERBAIKAN: Skrip untuk Hamburger Mobile Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            let isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        // Tutup menu saat link diklik
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
 </body>
 </html>
