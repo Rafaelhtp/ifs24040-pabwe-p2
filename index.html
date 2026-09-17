@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aero AI - Solusi Kecerdasan Buatan Enterprise untuk transformasi bisnis modern.">
     <title>Aero AI - Solusi Kecerdasan Buatan Enterprise</title>
-    
     <link rel="icon" href="assets/img/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +20,6 @@
                 Aero <span>AI</span>
             </a>
             
-            <!-- PERBAIKAN: Tombol Hamburger Mobile -->
             <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
                 ☰
             </button>
@@ -60,7 +58,6 @@
                     <p>Solusi kecerdasan buatan end-to-end yang disesuaikan dengan kebutuhan industri Anda.</p>
                 </div>
                 <div class="grid-cards">
-                    <!-- PERBAIKAN: Membungkus dengan <article> agar semantik tepat -->
                     <article class="card">
                         <div class="card-icon" aria-hidden="true">🤖</div>
                         <h3>Chatbot & Virtual Assistant</h3>
@@ -127,7 +124,7 @@
     <footer class="site-footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <h3>Aero <span style="color: #ECE1D5;">AI</span></h3>
+                <h3>Aero <span>AI</span></h3>
                 <p>Membawa kecerdasan buatan ke setiap lini bisnis di Indonesia. Cerdas, Etis, dan Inovatif.</p>
             </div>
             <div class="footer-links">
@@ -139,11 +136,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p style="color: #cbd5e1;">&copy; 2026 Rafael Nobel Hutapea - PABWE Praktikum 2. Hak Cipta Dilindungi.</p>
+            <p>&copy; 2026 Rafael Nobel Hutapea - PABWE Praktikum 2. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 
-    <!-- PERBAIKAN: Skrip untuk Hamburger Mobile Menu -->
     <script>
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('navMenu');
@@ -154,7 +150,6 @@
             hamburger.setAttribute('aria-expanded', !isExpanded);
         });
 
-        // Tutup menu saat link diklik
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
