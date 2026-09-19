@@ -27,6 +27,7 @@
 </head>
 <body class="text-slate-800 antialiased flex flex-col min-h-screen">
 
+<!-- ===== Navbar: identitas Aero AI + navigasi 3 halaman ===== -->
     <nav class="bg-brand sticky top-0 z-50 shadow-md">
         <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
             <a href="index.html" class="logo flex items-center gap-2 text-lg font-bold text-white">
@@ -44,6 +45,7 @@
         </div>
     </nav>
 
+<!-- ===== Menu mobile (toggle hamburger) ===== -->
     <div id="mobileMenu" class="hidden bg-brand border-t border-white/10 md:hidden">
         <ul class="flex flex-col px-4 py-3 text-white font-medium space-y-2">
             <li><a href="index.html" class="block py-2">Beranda</a></li>
@@ -53,7 +55,8 @@
     </div>
 
     <main class="mx-auto max-w-6xl px-4 py-10 w-full flex-grow">
-        
+
+ <!-- ===== Header Profil: foto, nama, kontak singkat ===== -->       
         <section class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left mb-8">
             <img src="assets/img/profil.png" alt="Foto Profil Rafael Nobel Hutapea" width="160" height="160" class="size-32 md:size-40 rounded-full object-cover border-4 border-brand shadow-sm shrink-0">
             
@@ -73,7 +76,8 @@
         </section>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
+
+ <!-- ===== Ringkasan diri ===== -->           
             <div class="md:col-span-1 space-y-8">
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
@@ -84,6 +88,7 @@
                     </p>
                 </section>
 
+<!-- ===== Riwayat Pendidikan ===== -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
                         <i class="ti ti-school text-brand" aria-hidden="true"></i> Pendidikan
@@ -102,6 +107,7 @@
                     </div>
                 </section>
 
+<!-- ===== Keahlian Teknis & Non-Teknis ===== -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-4">
                         <i class="ti ti-code text-brand" aria-hidden="true"></i> Keahlian
@@ -151,7 +157,7 @@
                     </ul>
                 </section>
             </div>
-
+<!-- ===== Pengalaman & Prestasi (timeline) ===== -->
             <div class="md:col-span-2 space-y-8">
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-6">
@@ -201,6 +207,7 @@
                     </div>
                 </section>
 
+<!-- ===== Pengalaman Organisasi ===== -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-6">
                         <i class="ti ti-users text-brand" aria-hidden="true"></i> Pengalaman Organisasi
@@ -242,6 +249,7 @@
                     </div>
                 </section>
 
+<!-- ===== Portofolio Tugas PABWE ===== -->
                 <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
                     <h2 class="flex items-center gap-2 font-bold text-lg text-slate-900 border-b border-slate-100 pb-3 mb-5">
                         <i class="ti ti-device-laptop text-brand" aria-hidden="true"></i> Portofolio Pengembangan Web (PABWE)
@@ -266,7 +274,8 @@
             </div>
         </div>
     </main>
-
+    
+<!-- ===== Footer CV ===== -->
     <footer class="bg-[#0b102e] text-slate-300 py-6 text-center text-sm mt-auto border-t border-[#1a235c]">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <p>&copy; 2026 Rafael Nobel Hutapea - PABWE Praktikum 2.</p>

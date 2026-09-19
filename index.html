@@ -24,17 +24,23 @@
                 ☰
             </button>
 
-            <nav class="nav-menu" id="navMenu">
-                <a href="#beranda">Beranda</a>
-                <a href="#layanan">Layanan</a>
-                <a href="#tentang">Tentang</a>
-                <a href="blog.html" class="link-highlight">Blog AI</a>
-                <a href="cv.html" class="link-highlight">Profil Tim</a>
+                <nav class="nav-menu" id="navMenu">
+            <a href="#beranda">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+            <a href="blog.html" class="link-highlight">Blog AI</a>
+            <a href="cv.html" class="link-highlight">Profil Tim</a>
             </nav>
         </div>
     </header>
 
+            <!-- ===== Hero / Beranda ===== -->
+        <section id="beranda" class="hero">
+
     <main>
+        
+            <!-- ===== Hero / Beranda ===== -->
         <section id="beranda" class="hero">
             <div class="container hero-container">
                 <div class="hero-text">
@@ -51,6 +57,7 @@
             </div>
         </section>
 
+        <!-- ===== Layanan AI: 3 layanan utama dalam bentuk card ===== -->
         <section id="layanan" class="section bg-light">
             <div class="container">
                 <div class="section-title">
@@ -76,8 +83,8 @@
                 </div>
             </div>
         </section>
-
-        <section id="tentang" class="section">
+            <!-- ===== Tentang: value proposition perusahaan ===== -->
+            <section id="tentang" class="section">
             <div class="container about-container">
                 <div class="about-text">
                     <h2>Mengapa Memilih Aero AI?</h2>
@@ -93,7 +100,8 @@
                 </div>
             </div>
         </section>
-
+        
+        <!-- ===== Form Kontak: lead capture konsultasi ===== -->
         <section id="kontak" class="section bg-light">
             <div class="container">
                 <div class="section-title">
@@ -120,7 +128,7 @@
             </div>
         </section>
     </main>
-
+        <!-- ===== Footer: brand info + navigasi cepat ===== -->
     <footer class="site-footer">
         <div class="container footer-container">
             <div class="footer-brand">
@@ -131,6 +139,7 @@
                 <h4>Navigasi</h4>
                 <a href="#beranda">Beranda</a>
                 <a href="#layanan">Layanan</a>
+                <a href="#kontak">Kontak</a>
                 <a href="blog.html">Blog AI</a>
                 <a href="cv.html">Profil Tim</a>
             </div>
@@ -139,7 +148,7 @@
             <p>&copy; 2026 Rafael Nobel Hutapea - PABWE Praktikum 2. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
-
+<!-- Toggle menu hamburger di mobile -->
     <script>
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('navMenu');
