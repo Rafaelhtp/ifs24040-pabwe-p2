@@ -1,0 +1,7 @@
+body { font-family: 'Inter', sans-serif; }
+h1, h2, h3, h4, h5, h6, .navbar-brand { font-family: 'Poppins', sans-serif; }
+
+.bg-brand { background-color: #141A45 !important; }
+.text-brand { color: #141A45 !important; }
+.bg-brand-dark { background-color: #7C10D0 !important; color: #ffffff !important; }
+.text-brand-soft { color: #ECE1D5 !important; }
